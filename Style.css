@@ -1,0 +1,122 @@
+:root {
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+  --ink: #0b1020;
+  --muted: #64748b;
+  --card: #ffffff;
+  --bg: #f8fafc;
+  --ring: rgba(59,130,246,.35);
+  --radius: 18px;
+  --shadow: 0 8px 24px rgba(2,6,23,.12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--blue-50), #ffffff 30%, #ffffff 100%);
+}
+
+/* Navbar */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px) saturate(140%);
+  border-bottom: 1px solid rgba(30, 58, 138, 0.08);
+}
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.brand .logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: var(--blue-900);
+  line-height: 1;
+}
+.brand small {
+  color: var(--muted);
+  font-weight: 600;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+.nav a:hover {
+  background: var(--blue-100);
+  color: var(--blue-900);
+}
+.nav .links {
+  display: flex;
+  gap: 6px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 28px;
+  align-items: center;
+  padding: 64px 24px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--blue-100);
+  color: var(--blue-900);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h1.name {
+  margin: 14px 0 8px;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(48px, 8vw, 86px);
+  color: var(--blue-900);
+}
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 60ch;
+}
+.cta-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--blue-600);
+  color: white;
+  box-shadow: var(--shadow);
+  text-decoration: none
