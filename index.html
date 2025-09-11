@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samreena — Portfolio</title>
+  <meta name="description" content="Portfolio of Samreena — projects, skills, and contact." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo">Samreena</div>
+      <small>Portfolio</small>
+    </div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div>
+      <span class="tag">Hello! I am</span>
+      <h1 class="name">Samreena</h1>
+      <p class="subtitle">A creative web developer who enjoys crafting clean interfaces and delightful user experiences. I build responsive, accessible sites with HTML, CSS, and JavaScript.</p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="portrait" aria-hidden="true">S</div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="muted">I’m passionate about bringing ideas to life on the web. My focus is on modern, standards-based development with an eye for elegant typography—spot the calligraphy headline! I love working in a deep blue palette and strive for pixel-perfect details.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Blue Breeze Landing</h3>
+          <p>A minimal, responsive landing page themed in royal blue with smooth scrolling and subtle shadows.</p>
+        </article>
+        <article class="card">
+          <h3>Calligraphy Cards</h3>
+          <p>Elegant typographic greeting cards featuring a calligraphy display font paired with clean body text.</p>
+        </article>
+        <article class="card">
+          <h3>Interactive Gallery</h3>
+          <p>A JavaScript-powered gallery with keyboard navigation and accessible focus states.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="chips">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Accessibility</span>
+        <span class="chip">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted">Have a project in mind? Send a quick note below, and I’ll get back to you.</p>
+      <form id="contactForm">
+        <div class="row" style="display:grid; gap:12px; grid-template-columns:1fr 1fr;">
+          <input type="text" name="name" placeholder="Your name" required/>
+          <input type="email" name="email" placeholder="Your email" required/>
+        </div>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <small>© <span id="year"></span> Samreena. Crafted with ♥ in blue.</small>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
